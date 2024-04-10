@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+/* reset the browser default css styles in */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Courier New", 'Courier New', Courier, monospace;
+    /* set up color variables for CSS*/
+    --bg-primary: #5D4E60; /*invoke */
+    --bg-secondary: #8EA8C3;
+    --font-color-primary: #DCEAB2;
+    --font-color-secondary: #FF5964;
+    --backup-color: #F9B5AC;
+}
+
+
+body{
+    height: 100vh;
+    background: var(--bg-primary);
+}
+
+/* -------- Start of styling for Resume page ----- */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+    margin-bottom: 20px;
+}
+
+.navbar h2{
+    color:var(--font-color-primary);
+    font-weight: 600;   
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--font-color-secondary);
+    font-size: 18px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li:hover a{
+    color: var(--font-color-primary);
+}
+
+.navbar ul li:last-child {
+    margin: 0;
+}
+
+.hire-btn{
+    background: var(--backup-color);
+    color: var(--font-color-secondary);
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: background 0.3s ease;
+}
+
+.hire-btn:hover{
+    background: var(--font-color-secondary);
+    color: var(--bg-primary);
+}
+
+/* End of styling the header*/
+
+/* Start of styling the page heading */
+.page_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.page_heading h1{
+    color: var(--font-color-primary);
+    font-weight: 600;
+
+}
+
+.page_heading h2{
+    color: var(--font-color-primary);
+    font-weight: 400;
+
+}
+
+/* End of styling the page heading */
+
+/* Start of styling Objective section */
+.objective{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 20px;
+} 
+
+.objective h3{
+    color: var(--font-color-primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.objective p{
+    color: var(--font-color-secondary);
+}
+/* End of styling Objective section */
+
+/* Start of styling Professional Experience */
+.prof_exp{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 20px;
+} 
+
+.prof_exp h3{
+    color: var(--font-color-primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.prof_exp .job1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prof_exp span{
+    color: var(--font-color-primary);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.prof_exp ul{
+    color: var(--font-color-secondary);
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+/* End of styling Professional Experience */
+
+/* Start of styling Educational Experiences */
+.educational_exp{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 20px;    
+}
+
+.educational_exp table{
+    border-collapse: separate;
+    border-spacing: 0; 
+    width: 50%;
+    margin: 10px;
+}
+
+.educational_exp thead tr th {
+    color: var(--font-color-primary);
+    font-weight: 600;
+    border: 2px solid var(--backup-color);
+    padding: 8px;
+    text-align: left;
+}
+
+.educational_exp td {
+    color: var(--font-color-secondary);
+    border: 2px solid var(--backup-color);
+    padding: 8px;
+    margin: 5px; 
+}
+/* End of styling Educational Experiences */
+
+/* Start of styling Extracurricular Interests and Hobbies */
+.extra_activities{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 100px; 
+}
+
+.extra_activities h3{
+    color: var(--font-color-primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.extra_activities p{
+    color: var(--font-color-secondary);
+    margin-bottom: 20px;
+}
+
+/* End of styling Extracurricular Interests and Hobbies */
+
+/* Start styling the footer here */
+footer{
+    position:relative;
+    background: var(--bg-secondary);
+    padding: 80px 50px 40px;
+    margin-top: 40px;
+    
+}
+
+footer .start{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background: var(--font-color-secondary);
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 70%;
+    top: -15%;
+    left: 15%;
+}
+
+footer .start p{
+    font-size: 13px;
+    width: 35%;
+}
+
+footer .start button{
+    background: transparent;
+    border: 1px solid var(--bg-primary);
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+footer .start button:hover{
+    background-color: var(--backup-color);
+    border-color: var(--bg-primary);
+}
+
+footer .cols{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+
+footer .cols .about-col{
+    color: var(--font-color-primary);
+    flex: 2;
+}
+
+.footer .cols .about-col h3 {
+    color: var(--font-color-primary);
+    margin-bottom: 20px;
+}
+
+footer .cols .about-col p{
+    color: var(--bg-primary);
+    font-size: 15px;
+}
+
+footer .cols .links-col{
+    flex: 3;
+}
+
+footer .cols .links-col h4, 
+footer .cols .news-col h4{
+    color: var(--font-color-primary);
+    margin-bottom: 20px;
+}
+
+footer .cols .links-col ul li{
+    list-style: none;
+}
+
+footer .cols .links-col ul li a{
+    display: flex;
+    text-decoration: none;
+    color: var(--bg-primary);
+    font-size: 14px;
+    line-height: 26px;
+    transition: color 0.3s ease;
+}
+
+footer .cols .links-col ul li a:hover{
+    color: var(--font-color-secondary);
+}
+
+footer .cols .links-col a{
+    display: flex;
+    text-decoration: none;
+    color: var(--bg-primary);
+    font-size: 14px;
+    line-height: 26px;
+    transition: color 0.3s ease;
+}
+
+footer .cols .links-col a:hover{
+    color: var(--font-color-secondary);
+}
+
+
+footer .cols .news-col{
+    flex: 3;
+}
+
+footer .cols .news-col p{
+    color: var(--bg-primary);
+    font-size: 15px;
+}
+
+footer .cols .news-col form{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+
+} 
+
+footer .cols .news-col form input{
+    width: 100%;
+    background: var(--font-color-secondary);
+    border: none;
+    padding: 13px;
+    font-weight: 400;
+    font-size: 13px;
+
+}
+
+footer .cols .news-col form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: var(--bg-primary);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 1%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+footer .cols .news-col form button:hover{
+    background: var(--font-color-primary);
+}
+
+footer .cols .news-col form button i {
+    font-size: 26px;
+    color: var(--font-color-primary)
+
+}
+
+footer .cols .news-col form button:hover i{
+    color: var(--bg-primary)
+}
+/* End of styling the footer */
+
+/* -------- End of styling for Resume page ----- */

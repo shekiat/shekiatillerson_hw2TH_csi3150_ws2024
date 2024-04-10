@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+/* reset the browser default css styles in */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Courier New", 'Courier New', Courier, monospace;
+    /* set up color variables for CSS*/
+    --bg-primary: #5D4E60; /*invoke */
+    --bg-secondary: #8EA8C3;
+    --font-color-primary: #DCEAB2;
+    --font-color-secondary: #FF5964;
+    --backup-color: #F9B5AC;
+}
+
+
+body{
+    height: 100vh;
+    background: var(--bg-primary);
+}
+
+/* -------- Start of styling for Home page ----- */
+
+/* Start of styling the header for the Home page*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2{
+    color:var(--font-color-primary);
+    font-weight: 600;
+    margin: 20px;   
+}
+
+.navbar ul{
+    display: flex;
+    padding: 0 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--font-color-secondary);
+    font-size: 18px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li:hover a{
+    color: var(--font-color-primary);
+}
+
+.navbar ul li:last-child {
+    margin: 0;
+}
+
+.hire-btn{
+    background: var(--backup-color);
+    color: var(--font-color-secondary);
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: background 0.3s ease;
+}
+
+.hire-btn:hover{
+    background: var(--font-color-secondary);
+    color: var(--bg-primary);
+}
+/* End of styling the Home page header */
+
+/* Beginning of styling for the Hero Section */
+
+.main{
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.main .left_col{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%; 
+    padding: 20px;
+}
+.main .left_col h1{
+    font-size: 44px;
+    color: var(--font-color-primary);
+    font-weight: 600;
+}
+
+.main h1 span{
+    color: var(--font-color-secondary);
+    text-decoration: underline;
+}
+
+.main h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--font-color-primary);
+    margin-top: 8px;
+}
+
+.main .hire-btn{
+    background: var(--backup-color);
+    color: var(--font-color-secondary);
+    padding: 6px 30px;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: background 0.3s ease;
+}
+
+.main .hire-btn:hover{
+    background: var(--font-color-secondary);
+    color: var(--bg-primary);
+}
+
+.main .right_col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+}
+.main .right_col h3{
+    font-size: 16px;
+    color: var(--font-color-primary);
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.main .right_col img{
+    width: 300px;
+    height: 200px;
+    margin-top: 75px;
+    
+}
+/* End of styling for the Hero Section */
+
+/* Start of styling the Home page info. section*/
+.home_page_info{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding: 0 20px;
+}
+
+/* styling the home page section */
+.home_page_info .introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+}
+
+
+
+.home_page_info .introduction i{
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+    color: var(--backup-color);
+}
+
+.home_page_info .introduction h2{
+    color: var(--font-color-primary);
+}
+
+.home_page_info .introduction p{
+    font-size: 16px;
+    color: var(--font-color-secondary);
+}
+
+/* End of styling the home page section*/
+
+/* Start of styling the Progress Bar */
+.home_page_info .progress_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 30px 20px 150px;
+}
+
+.home_page_info .progress_bar i{
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+    color: var(--backup-color);
+}
+
+.home_page_info .progress_bar h2{
+    color: var(--font-color-primary);
+}
+
+.home_page_info .progress_bar label{
+    font-size: 16px;
+    color: var(--font-color-secondary);
+} 
+/* End of styling the Progress Bar */
+/* End of styling the home page Information */
+
+/* Start styling the footer on the home page here */
+footer{
+    position:relative;
+    background: var(--bg-secondary);
+    padding: 80px 50px 40px;
+    
+}
+
+footer .start{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background: var(--font-color-secondary);
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 70%;
+    top: -25%;
+    left: 15%;
+}
+
+footer .start p{
+    font-size: 13px;
+    width: 35%;
+}
+
+footer .start button{
+    background: transparent;
+    border: 1px solid var(--bg-primary);
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+footer .start button:hover{
+    background-color: var(--backup-color);
+    border-color: var(--bg-primary);
+}
+
+footer .cols{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+
+footer .cols .about-col{
+    color: var(--font-color-primary);
+    flex: 2;
+}
+
+.footer .cols .about-col h3 {
+    color: var(--font-color-primary);
+    margin-bottom: 20px;
+}
+
+footer .cols .about-col p{
+    color: var(--bg-primary);
+    font-size: 15px;
+}
+
+footer .cols .links-col{
+    flex: 3;
+}
+
+footer .cols .links-col h4, 
+footer .cols .news-col h4{
+    color: var(--font-color-primary);
+    margin-bottom: 20px;
+}
+
+footer .cols .links-col ul li{
+    list-style: none;
+}
+
+footer .cols .links-col ul li a{
+    display: flex;
+    text-decoration: none;
+    color: var(--bg-primary);
+    font-size: 14px;
+    line-height: 26px;
+    transition: color 0.3s ease;
+}
+
+footer .cols .links-col ul li a:hover{
+    color: var(--font-color-secondary);
+}
+
+footer .cols .links-col a{
+    display: flex;
+    text-decoration: none;
+    color: var(--bg-primary);
+    font-size: 14px;
+    line-height: 26px;
+    transition: color 0.3s ease;
+}
+
+footer .cols .links-col a:hover{
+    color: var(--font-color-secondary);
+}
+
+
+footer .cols .news-col{
+    flex: 3;
+}
+
+footer .cols .news-col p{
+    color: var(--bg-primary);
+    font-size: 15px;
+}
+
+footer .cols .news-col form{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+
+} 
+
+footer .cols .news-col form input{
+    width: 100%;
+    background: var(--font-color-secondary);
+    border: none;
+    padding: 13px;
+    font-weight: 400;
+    font-size: 13px;
+
+}
+
+footer .cols .news-col form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: var(--bg-primary);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 1%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+footer .cols .news-col form button:hover{
+    background: var(--font-color-primary);
+}
+
+footer .cols .news-col form button i {
+    font-size: 26px;
+    color: var(--font-color-primary)
+
+}
+
+footer .cols .news-col form button:hover i{
+    color: var(--bg-primary)
+}
+/* End of styling the home page footer */
+
+/* -------- End of styling for Home page ----- */
+
